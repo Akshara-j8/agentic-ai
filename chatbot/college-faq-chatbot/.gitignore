@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets — never commit
+.env
+
+# ChromaDB vector store (large binary, regenerate with ingest.py)
+chroma_db/
+
+# Memory / session data (runtime, not source)
+memory/sessions.json
+
+# Logs (runtime)
+logs/governance_logs.jsonl
+
+# Test output / temp
+test_write.txt
+*.tmp
+
+# IDE
+.vscode/
+.idea/
