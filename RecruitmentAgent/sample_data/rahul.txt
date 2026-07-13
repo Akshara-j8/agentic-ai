@@ -1,0 +1,38 @@
+RAHUL VERMA
+rahul.v@protonmail.com | +91-90000-12345 | Pune, India
+github.com/rahulverma-ml
+
+SUMMARY
+Data Scientist with 2.5 years of experience in ML model development and deployment.
+Comfortable with Python, scikit-learn, and basic cloud services. Looking to grow into
+a senior ML engineering role.
+
+EXPERIENCE
+Data Scientist — Infosys AI Practice (Aug 2021 – Present)
+- Built customer churn prediction models (Random Forest, XGBoost) for a telecom client;
+  achieved 84% accuracy on held-out test set.
+- Created dashboards in Tableau and Power BI for model explainability reports.
+- Wrote Python ETL scripts to automate data extraction from Oracle databases.
+- Participated in weekly sprint reviews and client presentations.
+
+Junior Data Analyst — Wipro Analytics (Jun 2020 – Jul 2021)
+- Performed SQL-based data analysis and report generation for BFSI clients.
+- Automated Excel reporting using Python openpyxl, saving 5 hours/week.
+
+EDUCATION
+B.E. Computer Engineering — Pune University (2020) | 7.4 CGPA
+
+PROJECTS
+1. Sentiment Analysis on Product Reviews
+   - Fine-tuned BERT (bert-base-uncased) on Amazon reviews dataset; F1 score 0.81.
+   - Technologies: Python, HuggingFace, PyTorch, Flask
+2. House Price Prediction
+   - Implemented Linear Regression and Random Forest on Kaggle housing dataset.
+   - Technologies: Python, scikit-learn, pandas, matplotlib
+
+SKILLS
+Python, scikit-learn, PyTorch (basic), TensorFlow (basic), pandas, numpy, SQL,
+Docker (basic), AWS S3, Git, Tableau, Power BI, Flask
+
+CERTIFICATIONS
+- Machine Learning — Coursera (Andrew Ng, 2021)

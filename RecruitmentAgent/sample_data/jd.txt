@@ -1,0 +1,44 @@
+TechVest AI — Machine Learning Engineer
+Location: Bangalore, India (Hybrid)
+Experience: 3–6 years
+
+ABOUT THE ROLE
+TechVest is building next-generation AI infrastructure. We are looking for a Machine Learning Engineer
+to design, train, and deploy production-grade ML models at scale. You will work on recommendation
+systems, NLP pipelines, and real-time inference serving.
+
+RESPONSIBILITIES
+- Design and implement ML pipelines for production use cases (recommendations, NLP, CV)
+- Train, fine-tune, and evaluate deep learning models (PyTorch / TensorFlow)
+- Build scalable data pipelines (Spark, Airflow, Kafka)
+- Deploy models via REST APIs and streaming endpoints (FastAPI, ONNX, TorchServe)
+- Maintain MLOps infrastructure (MLflow, DVC, Weights & Biases)
+- Collaborate with product and data engineering teams
+
+REQUIRED SKILLS
+- Python 3.9+ (advanced): async, type hints, packaging, testing
+- Machine Learning: supervised/unsupervised, ensemble, neural networks
+- Deep Learning frameworks: PyTorch or TensorFlow (proficient)
+- MLOps: MLflow, model versioning, A/B testing, monitoring
+- SQL and NoSQL databases
+- Docker, Kubernetes, CI/CD
+- Strong problem-solving and communication skills
+
+PREFERRED
+- Experience with LLMs, RAG, or vector databases
+- Open-source contributions
+- Publications or Kaggle achievements
+- AWS / GCP cloud experience
+
+RUBRIC WEIGHTS
+Python Proficiency     20%
+Machine Learning       25%
+Projects & Impact      20%
+Communication          10%
+Problem Solving        10%
+Tools & Infrastructure 10%
+Education & Credentials 5%
+
+COMPENSATION
+CTC: ₹18–35 LPA depending on experience
+Stock options available

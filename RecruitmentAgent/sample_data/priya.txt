@@ -1,0 +1,41 @@
+PRIYA SHARMA
+priya.sharma@email.com | +91-98765-43210 | Bangalore, India
+github.com/priyasharma | linkedin.com/in/priyasharma
+
+PROFESSIONAL SUMMARY
+Machine Learning Engineer with 4 years of experience building production NLP and recommendation
+systems. Proficient in PyTorch, Python, and MLOps. Delivered 3 end-to-end ML products used by
+500K+ users. Strong communicator with a track record of cross-functional collaboration.
+
+EXPERIENCE
+Senior ML Engineer — Flipkart AI Labs (Jan 2022 – Present)
+- Built a real-time product recommendation engine using two-tower neural networks (PyTorch),
+  improving click-through rate by 22% across 50M daily active users.
+- Designed and maintained Airflow-based feature pipelines processing 2TB/day.
+- Led MLflow adoption across 3 teams; reduced model deployment time from 3 days to 4 hours.
+- Mentored 2 junior engineers; conducted bi-weekly ML reading group sessions.
+
+ML Engineer — Swiggy Data Science (Jul 2020 – Dec 2021)
+- Developed an ETA prediction model (LightGBM + LSTM) with 8% MAE reduction over baseline.
+- Built a fraud detection pipeline using Isolation Forest and XGBoost, saving ₹2Cr/month.
+- Containerised all ML services with Docker; deployed on GCP via Kubernetes.
+
+EDUCATION
+B.Tech in Computer Science — IIT Delhi (2020) | CGPA 8.6/10
+
+PROJECTS
+1. OpenReview Summariser (github.com/priyasharma/openreview-sum)
+   - Fine-tuned BART on 50K academic paper abstracts for structured summarisation.
+   - Technologies: HuggingFace Transformers, PyTorch, FastAPI, Docker
+2. Real-Time Anomaly Detection (personal project)
+   - Built streaming anomaly detector on Kafka using PyOD and custom LSTM autoencoder.
+   - Technologies: Python, Kafka, PyOD, PyTorch, Grafana
+
+SKILLS
+Python (expert), PyTorch, TensorFlow, scikit-learn, HuggingFace, MLflow, DVC,
+Apache Airflow, Spark, Kafka, Docker, Kubernetes, GCP, PostgreSQL, Redis, FastAPI,
+LangChain, SQL, Git, Weights & Biases, ONNX
+
+CERTIFICATIONS
+- AWS Certified Machine Learning Specialty (2023)
+- Deep Learning Specialisation — Coursera/DeepLearning.AI (2021)

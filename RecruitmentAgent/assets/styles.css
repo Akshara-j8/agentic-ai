@@ -1,0 +1,670 @@
+/* ================================================================
+   TechVest Recruitment Agent — Enterprise Dark Theme
+   Glassmorphism · Gradients · Smooth Animations
+   ================================================================ */
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ================================================================
+   GLOBAL RESET & BASE
+   ================================================================ */
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    color: #F1F5F9;
+}
+
+/* Hide default Streamlit chrome */
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+header    { visibility: hidden; }
+
+/* Main app background */
+.main .block-container {
+    background: #0F172A;
+    padding: 1.5rem 2rem;
+    max-width: 1400px;
+}
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%) !important;
+    border-right: 1px solid rgba(99,102,241,0.2);
+}
+
+/* ================================================================
+   KPI METRIC CARDS
+   ================================================================ */
+.kpi-card {
+    background: linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.9) 100%);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+    overflow: hidden;
+}
+.kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #6366F1, #8B5CF6, #06B6D4);
+    border-radius: 16px 16px 0 0;
+}
+.kpi-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99,102,241,0.5);
+    box-shadow: 0 20px 60px rgba(99,102,241,0.2);
+}
+.kpi-card .kpi-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6366F1, #8B5CF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+.kpi-card .kpi-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 0.25rem;
+}
+.kpi-card .kpi-delta {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+.kpi-card .kpi-icon {
+    font-size: 1.8rem;
+    opacity: 0.8;
+}
+
+/* ================================================================
+   CANDIDATE CARDS
+   ================================================================ */
+.candidate-card {
+    background: linear-gradient(135deg, rgba(30,41,59,0.95) 0%, rgba(15,23,42,0.95) 100%);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+}
+.candidate-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(99,102,241,0.4);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(99,102,241,0.1);
+}
+.candidate-card .avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+.candidate-card .candidate-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F1F5F9;
+}
+.candidate-card .candidate-meta {
+    font-size: 0.8rem;
+    color: #94A3B8;
+}
+
+/* ================================================================
+   BADGE CHIPS
+   ================================================================ */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.65rem;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.badge-interview {
+    background: rgba(16,185,129,0.15);
+    color: #10B981;
+    border: 1px solid rgba(16,185,129,0.3);
+}
+.badge-hold {
+    background: rgba(245,158,11,0.15);
+    color: #F59E0B;
+    border: 1px solid rgba(245,158,11,0.3);
+}
+.badge-reject {
+    background: rgba(239,68,68,0.15);
+    color: #EF4444;
+    border: 1px solid rgba(239,68,68,0.3);
+}
+.badge-injection {
+    background: rgba(239,68,68,0.2);
+    color: #FCA5A5;
+    border: 1px solid rgba(239,68,68,0.5);
+    animation: pulse-red 2s infinite;
+}
+.badge-pass {
+    background: rgba(16,185,129,0.15);
+    color: #10B981;
+    border: 1px solid rgba(16,185,129,0.3);
+}
+.badge-fail {
+    background: rgba(239,68,68,0.15);
+    color: #EF4444;
+    border: 1px solid rgba(239,68,68,0.3);
+}
+
+/* Skill chips */
+.skill-chip {
+    display: inline-block;
+    background: rgba(99,102,241,0.12);
+    color: #A5B4FC;
+    border: 1px solid rgba(99,102,241,0.25);
+    border-radius: 8px;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 2px;
+    transition: all 0.2s;
+}
+.skill-chip:hover {
+    background: rgba(99,102,241,0.25);
+    color: #C7D2FE;
+}
+
+/* ================================================================
+   TIMELINE
+   ================================================================ */
+.timeline-container {
+    position: relative;
+    padding-left: 2rem;
+}
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 0.6rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #6366F1 0%, #8B5CF6 50%, #06B6D4 100%);
+    opacity: 0.4;
+    border-radius: 2px;
+}
+.timeline-event {
+    position: relative;
+    background: rgba(30,41,59,0.7);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.25s;
+}
+.timeline-event:hover {
+    border-color: rgba(99,102,241,0.3);
+    background: rgba(30,41,59,0.9);
+}
+.timeline-dot {
+    position: absolute;
+    left: -1.65rem;
+    top: 1.1rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #0F172A;
+}
+.timeline-event .event-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #E2E8F0;
+    margin-bottom: 0.25rem;
+}
+.timeline-event .event-content {
+    font-size: 0.78rem;
+    color: #94A3B8;
+    line-height: 1.5;
+}
+.timeline-event .event-time {
+    font-size: 0.68rem;
+    color: #64748B;
+    margin-top: 0.25rem;
+}
+
+/* ================================================================
+   PROGRESS BARS
+   ================================================================ */
+.score-bar-container {
+    background: rgba(51,65,85,0.5);
+    border-radius: 99px;
+    height: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.score-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 1s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+}
+.score-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+/* ================================================================
+   GLASS PANELS
+   ================================================================ */
+.glass-panel {
+    background: rgba(30,41,59,0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+.glass-panel-sm {
+    background: rgba(30,41,59,0.5);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* ================================================================
+   ALERT BANNERS
+   ================================================================ */
+.alert-banner {
+    border-radius: 12px;
+    padding: 0.875rem 1.25rem;
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    border: 1px solid;
+}
+.alert-success {
+    background: rgba(16,185,129,0.1);
+    border-color: rgba(16,185,129,0.3);
+    color: #6EE7B7;
+}
+.alert-warning {
+    background: rgba(245,158,11,0.1);
+    border-color: rgba(245,158,11,0.3);
+    color: #FCD34D;
+}
+.alert-danger {
+    background: rgba(239,68,68,0.12);
+    border-color: rgba(239,68,68,0.4);
+    color: #FCA5A5;
+    animation: pulse-red 3s infinite;
+}
+.alert-info {
+    background: rgba(59,130,246,0.1);
+    border-color: rgba(59,130,246,0.3);
+    color: #93C5FD;
+}
+
+/* ================================================================
+   SIDEBAR COMPONENTS
+   ================================================================ */
+.sidebar-logo {
+    text-align: center;
+    padding: 1.5rem 0 1rem;
+}
+.sidebar-logo .logo-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+.sidebar-logo .logo-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6366F1, #8B5CF6, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sidebar-logo .logo-sub {
+    font-size: 0.7rem;
+    color: #475569;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.sidebar-section {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 0.75rem;
+}
+.sidebar-section-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #475569;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 99px;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+.status-online  { background: rgba(16,185,129,0.15); color: #10B981; }
+.status-warning { background: rgba(245,158,11,0.15); color: #F59E0B; }
+.status-offline { background: rgba(239,68,68,0.15);  color: #EF4444; }
+.status-idle    { background: rgba(148,163,184,0.15); color: #94A3B8; }
+
+/* ================================================================
+   TABLES
+   ================================================================ */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+}
+.data-table th {
+    background: rgba(15,23,42,0.8);
+    color: #94A3B8;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    text-align: left;
+}
+.data-table td {
+    padding: 0.75rem 1rem;
+    color: #CBD5E1;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    vertical-align: middle;
+}
+.data-table tr:hover td {
+    background: rgba(99,102,241,0.05);
+}
+
+/* ================================================================
+   BUTTONS
+   ================================================================ */
+.btn-primary {
+    background: linear-gradient(135deg, #6366F1, #8B5CF6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(99,102,241,0.4);
+}
+.btn-success {
+    background: linear-gradient(135deg, #059669, #10B981);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.btn-danger {
+    background: linear-gradient(135deg, #DC2626, #EF4444);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================================================================
+   PAGE HEADERS
+   ================================================================ */
+.page-header {
+    margin-bottom: 1.5rem;
+}
+.page-header h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #F1F5F9, #94A3B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+.page-header p {
+    color: #64748B;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+.breadcrumb {
+    font-size: 0.72rem;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+
+/* ================================================================
+   STREAMLIT OVERRIDES
+   ================================================================ */
+div[data-testid="stMetricValue"] {
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    color: #6366F1 !important;
+}
+div[data-testid="stMetricLabel"] {
+    font-size: 0.72rem !important;
+    color: #64748B !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* Expanders */
+div[data-testid="stExpander"] {
+    background: rgba(30,41,59,0.4) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    border-radius: 12px !important;
+}
+
+/* Select boxes */
+div[data-testid="stSelectbox"] > div {
+    background: rgba(30,41,59,0.7) !important;
+    border-color: rgba(99,102,241,0.3) !important;
+    border-radius: 10px !important;
+}
+
+/* Text inputs */
+div[data-testid="stTextInput"] input,
+div[data-testid="stTextArea"] textarea {
+    background: rgba(30,41,59,0.7) !important;
+    border-color: rgba(99,102,241,0.3) !important;
+    border-radius: 10px !important;
+    color: #F1F5F9 !important;
+}
+
+/* Buttons */
+div[data-testid="stButton"] button {
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    transition: all 0.25s !important;
+}
+
+/* Dataframe */
+div[data-testid="stDataFrame"] {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+/* Tabs */
+button[data-baseweb="tab"] {
+    background: transparent !important;
+    color: #64748B !important;
+    font-weight: 600 !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
+    transition: all 0.2s !important;
+}
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #6366F1 !important;
+    background: rgba(99,102,241,0.1) !important;
+}
+
+/* ================================================================
+   ANIMATIONS
+   ================================================================ */
+@keyframes shimmer {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+@keyframes pulse-red {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.7; }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(16px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.animate-fade-in { animation: fadeInUp 0.4s ease-out; }
+.animate-slide-in { animation: slideInRight 0.3s ease-out; }
+
+/* Loading spinner */
+.spinner {
+    width: 20px; height: 20px;
+    border: 2px solid rgba(99,102,241,0.2);
+    border-top-color: #6366F1;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+}
+
+/* Skeleton loader */
+.skeleton {
+    background: linear-gradient(90deg,
+        rgba(30,41,59,0.5) 25%,
+        rgba(51,65,85,0.5) 50%,
+        rgba(30,41,59,0.5) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+}
+
+/* ================================================================
+   INJECTION WARNING
+   ================================================================ */
+.injection-warning {
+    background: linear-gradient(135deg, rgba(239,68,68,0.15), rgba(220,38,38,0.05));
+    border: 1px solid rgba(239,68,68,0.5);
+    border-left: 4px solid #EF4444;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin: 0.5rem 0;
+}
+.injection-warning .warning-title {
+    color: #FCA5A5;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.injection-warning .flagged-text {
+    background: rgba(239,68,68,0.1);
+    color: #FCA5A5;
+    font-family: 'Courier New', monospace;
+    font-size: 0.78rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(239,68,68,0.2);
+}
+
+/* ================================================================
+   SCORE GAUGE COLOURS
+   ================================================================ */
+.score-high   { color: #10B981; }
+.score-medium { color: #F59E0B; }
+.score-low    { color: #EF4444; }
+
+/* ================================================================
+   SECTION DIVIDER
+   ================================================================ */
+.section-divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin: 1.5rem 0;
+}
+
+/* ================================================================
+   TOOLTIP
+   ================================================================ */
+.tooltip-container { position: relative; display: inline-block; }
+.tooltip-text {
+    visibility: hidden;
+    background: rgba(15,23,42,0.95);
+    color: #F1F5F9;
+    font-size: 0.72rem;
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    border: 1px solid rgba(99,102,241,0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+.tooltip-container:hover .tooltip-text { visibility: visible; }
+
+/* ================================================================
+   CHARTS WRAPPER
+   ================================================================ */
+.chart-card {
+    background: rgba(30,41,59,0.7);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 1.25rem;
+    backdrop-filter: blur(12px);
+}
+.chart-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.75rem;
+}
