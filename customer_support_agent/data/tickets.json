@@ -1,0 +1,218 @@
+[
+  {
+    "ok": true,
+    "ticket_id": "TCK-1772142D",
+    "summary": "Human follow-up required (legal_or_threat_language): I was charged $300 twice for order ORD-2004. I will file a chargeback and sue your company if this is not resolved right now.",
+    "category": "escalation",
+    "priority": "high",
+    "status": "queued",
+    "created_at": "2026-07-13T11:11:47.959641+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-93041EE1",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:11:48.007657+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-4B3EB41B",
+    "summary": "Human follow-up required (legal_or_threat_language): I was charged $300 twice for order ORD-2004. I will file a chargeback and sue your company if this is not resolved right now.",
+    "category": "escalation",
+    "priority": "high",
+    "status": "queued",
+    "created_at": "2026-07-13T11:12:13.524170+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-9C1A1FE5",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:12:13.555697+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-5B09613C",
+    "summary": "Human follow-up required (legal_or_threat_language): I was charged $300 twice for order ORD-2004. I will file a chargeback and sue your company if this is not resolved right now.",
+    "category": "escalation",
+    "priority": "high",
+    "status": "queued",
+    "created_at": "2026-07-13T11:12:39.589820+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-6D43D410",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:12:39.638828+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-3CD44D38",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:14:36.033482+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-40A1E432",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:14:36.054573+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-F7FD5445",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:14:36.133593+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-91246727",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:14:36.199329+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-4EAF840F",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:14:36.228334+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-BE5CC1FE",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:14:36.304874+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-9AC3D34D",
+    "summary": "Human follow-up required (legal_or_threat_language): I was charged $300 twice for order ORD-2004. I will file a chargeback and sue your company if this is not resolved right now.",
+    "category": "escalation",
+    "priority": "high",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:27.007001+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-E2DE65A6",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:27.050008+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-057D3439",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:32.123462+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-114A3679",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:32.157467+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-95E34836",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:32.220014+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-D81B13EF",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:32.288544+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-265E3F38",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:32.335541+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-A82F438D",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T11:19:32.409106+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-B8C3D227",
+    "summary": "Human follow-up required (legal_or_threat_language): I was charged $300 twice for order ORD-2004. I will file a chargeback and sue your company if this is not resolved right now.",
+    "category": "escalation",
+    "priority": "high",
+    "status": "queued",
+    "created_at": "2026-07-13T12:31:36.781310+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-662F65D6",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T12:31:36.837359+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-D9B532BF",
+    "summary": "Human follow-up required (legal_or_threat_language): I was double-charged $300 on order ORD-2004. This is fraud. I will sue your company if this isn't resolved immediately.",
+    "category": "escalation",
+    "priority": "high",
+    "status": "queued",
+    "created_at": "2026-07-13T12:49:07.759169+00:00"
+  },
+  {
+    "ok": true,
+    "ticket_id": "TCK-FC6FC693",
+    "summary": "[REDACTED \u2014 injection attempt detected]",
+    "category": "general",
+    "priority": "normal",
+    "status": "queued",
+    "created_at": "2026-07-13T12:50:02.037961+00:00"
+  }
+]
