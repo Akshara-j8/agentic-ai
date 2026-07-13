@@ -1,0 +1,8 @@
+langgraph
+langchain
+chromadb
+fastapi
+uvicorn
+pydantic
+streamlit
+deep-translator
